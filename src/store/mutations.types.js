@@ -1,0 +1,10 @@
+export const SET_COUNTRIES_LIST = "setCountriesList";
+export const SET_CITIES_LIST = "setCitiesList";
+export const SET_LOCATIONS_LIST = "setLocationsList";
+export const SET_DATA_READY = "setdataReady";
+export const SET_SEARCH_Q = "setSearchQ";
+export const CLEAR_SEARCH_Q = "clearSearchQ"
+export const SET_OPTIONS_LIMIT = "setOptionsLimit";
+export const SET_OPTIONS_PAGE = "setOptionsPage";
+export const SET_OPTIONS_COUNTRY = "setOptionsCountry";
+export const SET_OPTIONS_CITY = "setOptionsCity";

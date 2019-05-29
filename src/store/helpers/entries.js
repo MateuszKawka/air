@@ -19,9 +19,10 @@ export const entries = {
     let entry = `https://api.openaq.org/v1/cities?`
 
     if (options.country) {
+      console.log('exist')
       entry += `country=${options.country}`
     }
-
+    console.log(options)
     if (options.order_by) {
       entry += `&order_by=${options.order_by}`
     }

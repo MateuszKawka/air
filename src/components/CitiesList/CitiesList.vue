@@ -15,7 +15,7 @@ export default {
   name: "CitiesList",
   computed: {
     cities() {
-      return this.$store.state.citiesList;
+      return this.$store.getters.citiesList;
     }
   },
   components: {

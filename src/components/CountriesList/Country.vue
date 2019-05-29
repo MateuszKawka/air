@@ -19,7 +19,7 @@
       </p>
     </div>
     <div class="uk-card-footer">
-      <a href="#" class="uk-button uk-button-text" @click="getCountry">Show cities</a>
+      <a href="#" class="uk-button uk-button-text" @click="getCities">Show cities</a>
     </div>
   </div>
 </template>
@@ -34,10 +34,8 @@ export default {
     }
   },
   methods: {
-    getCountry() {
-      this.$store.commit('setdataReady', false)
-      this.$store.dispatch('getCitiesList')
-      .then(() => this.$store.commit('setdataReady', true))
+    getCities() {
+      this.$store.dispatch('getCitiesList', this.country.code)
       .then(() => this.$router.push('/cities'));
     }
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="spinner-container" v-if="showSpinner">
+  <div class="spinner-container" v-if="false">
     <div uk-spinner="ratio: 2"></div>
   </div>
 </template>

@@ -12,10 +12,7 @@ export default {
     CountriesList
   },
   mounted() {
-    this.$store.commit("setdataReady", false);
-    this.$store
-      .dispatch("getCountriesList")
-      .then(() => this.$store.commit("setdataReady", true));
+    this.$store.dispatch("getCountriesList")
   }
 };
 </script>

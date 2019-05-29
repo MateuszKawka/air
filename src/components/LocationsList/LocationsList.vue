@@ -15,7 +15,7 @@ export default {
   name: "LocationList",
   computed: {
     locations() {
-      return this.$store.state.locationsList;
+      return this.$store.getters.locationsList;
     }
   },
   components: {

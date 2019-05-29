@@ -29,10 +29,8 @@ export default {
   },
   methods: {
     getLocations() {
-      this.$store.commit("setdataReady", false);
-      this.$store
-        .dispatch("getLocationsList")
-        .then(() => this.$store.commit("setdataReady", true))
+      
+      this.$store.dispatch("getLocationsList", this.city.city)
         .then(() => this.$router.push("/locations"));
     }
   }
